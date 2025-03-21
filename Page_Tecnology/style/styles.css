@@ -1,0 +1,459 @@
+/* Estilos personalizados */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1F3F5;
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #343a40; /* Color de fondo del header */
+}
+
+/* Estilos generales para los menús desplegables */
+.navbar-nav .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease; /* Transición más suave */
+    transform: translateY(-20px); /* Mayor desplazamiento inicial para una animación más fluida */
+    right: 0; /* Alinea el menú desplegable a la derecha */
+    left: auto; /* Anula la alineación a la izquierda */
+}
+
+/* Mostrar el menú desplegable cuando está activo */
+.navbar-nav .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Vuelve a la posición original */
+}
+
+/* Estilos para los enlaces del menú desplegable */
+.dropdown-menu a {
+    transition: background-color 0.2s ease, color 0.2s ease;
+    color: #343a40; /* Color del texto del menú desplegable */
+}
+
+/* Efecto hover en los enlaces del menú desplegable */
+.dropdown-menu a:hover {
+    background-color: #495057; /* Color de fondo al hacer hover */
+    color: #ffffff; /* Color del texto al hacer hover */
+}
+
+/*Carusel #1*/
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel-item h5 {
+    opacity: 0.8;
+    align-items: center;
+    width: 200px;
+    color: #000000;
+    background-color: #c7c7c7;
+    border-radius: 5px;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto; /* Centra el elemento horizontalmente */
+}
+
+/*Diseño de tarejtas de productos en GENERAL*/
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que el contenido se desborde */
+    display: flex;
+    flex-direction: column; /* Organiza el contenido en columna */
+    height: 380px; /* Altura fija para las tarjetas */
+    width: 250px; /* Ancho fijo para las tarjetas */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.card-img-container {
+    position: relative; /* Para posicionar el ícono de favorito */
+    margin-top: 20px; /* Margen superior para la imagen */
+}
+
+.card-img-top {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Elimina el espacio debajo de la imagen */
+}
+
+.favorito-btn {
+    position: absolute; /* Posición absoluta para el ícono de favorito */
+    top: 10px; /* Distancia desde la parte superior */
+    right: 10px; /* Distancia desde la derecha */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Estilos para los íconos de Font Awesome */
+.fas {
+    font-size: 24px;
+    color: #666; /* Color gris por defecto */
+    transition: color 0.3s ease;
+}
+
+/* Estilos para el corazón activo */
+.favorito-btn.active .fa-heart {
+    color: red; /* Color rojo al activar */
+}
+
+/* Estilos para el carrito activo */
+.carrito-btn.active .fa-shopping-cart {
+    color: blue; /* Color azul al activar */
+}
+
+.card-divider {
+    width: 80%; /* Ancho del divisor */
+    margin: 5px auto; /* Centrar el divisor */
+    border: 0;
+    border-top: 2px solid #ddd; /* Línea divisoria más visible */
+}
+
+.card-body {
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Alinea el contenido a la izquierda */
+}
+
+.card-title {
+    font-size: 1.1rem; /* Tamaño del título */
+    margin-left: 0;
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #333; /* Color del título */
+}
+
+.card-text {
+    font-size: 0.9rem; /* Tamaño del texto */
+    color: #666; /* Color gris oscuro */
+    margin-bottom: 10px; /* Espacio debajo del texto */
+}
+
+.card-price {
+    font-size: 1.1rem; /* Tamaño del precio */
+    font-weight: bold; /* Negrita para el precio */
+    color: #fff; /* Color blanco */
+    background-color: #ff0000; /* Fondo rojo */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 15px; /* Bordes redondeados */
+    display: inline-block; /* Para que no ocupe todo el ancho */
+    margin-bottom: 15px; /* Espacio debajo del precio */
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el botón y el ícono */
+    align-items: center; /* Alinear verticalmente */
+}
+
+.btn-comprar {
+    background-color: #ff0000; /* Fondo rojo */
+    color: #fff; /* Letras blancas */
+    padding: 8px 16px; /* Espaciado interno */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 0.9rem; /* Tamaño del texto */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Asegura que no haya subrayado */
+}
+
+.btn-comprar:hover {
+    background-color: #cc0000; /* Color rojo más oscuro al hacer hover */
+    text-decoration: none; /* Asegura que no haya subrayado */
+}
+
+.carrito-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+
+.mensaje-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Color de fondo del mensaje */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    z-index: 1000; /* Asegura que el mensaje esté por encima de otros elementos */
+    animation: slideIn 0.5s ease-out; /* Animación de entrada */
+}
+
+.mensaje-flotante.eliminado {
+    background-color: #f44336; /* Color rojo para mensajes de eliminación */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Estilos para la sección de productos de nuevo ingreso en carusel*/
+.productos-section {
+    padding: 20px 0;
+    background-color: #F1F3F5;
+}
+
+.productos-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.tarjetas-container {
+    height: auto;
+    display: flex;
+    gap: 15px; /* Espacio entre las tarjetas */
+    transition: transform 0.5s ease; /* Transición suave al mover las tarjetas */
+    width: 100%;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Fuerza el desplazamiento a alinearse con las tarjetas */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    padding: 20px 0; /* Más espacio interno para que las tarjetas se vean mejor */
+}
+
+/* Ocultar la barra de desplazamiento en modo escritorio */
+@media (min-width: 992px) {
+    .tarjetas-container {
+        overflow-x: hidden; /* Oculta la barra de desplazamiento */
+    }
+}
+
+/* Mostrar la barra de desplazamiento en modo responsive */
+@media (max-width: 991.98px) {
+    .tarjetas-container {
+        overflow-x: auto; /* Muestra la barra de desplazamiento */
+    }
+}
+
+.tarjetas-container .card {
+    flex: 0 0 250px; /* Ancho fijo para las tarjetas */
+    height: auto; /* Altura fija para las tarjetas */
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-snap-align: center; /* Centra la tarjeta en el contenedor */
+}
+
+/* Ajustar el número de tarjetas visibles en modo escritorio */
+@media (min-width: 992px) {
+    .tarjetas-container .card {
+        flex: 0 0 calc(25% - 15px); /* 4 tarjetas por fila en escritorio */
+        height: auto;
+    }
+}
+
+/* Ajustar el número de tarjetas visibles en modo responsive */
+@media (max-width: 991.98px) {
+    .tarjetas-container .card {
+        flex: 0 0 calc(100% - 15px); /* 1 tarjeta por fila en móviles y tablets */
+        flex: 0 0 220px; /* Ancho fijo para las tarjetas */
+        height: auto; /* Altura fija para las tarjetas */
+    }
+}
+
+/* Estilos para los botones de control */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0) invert(1); /* Cambia el color de los íconos a blanco */
+}
+
+/* Estilos para las tarjetas en el main */
+.row .tarjeta-comprar {
+    flex: 0 0 calc(50% - 15px); /* 2 tarjetas por fila en móviles */
+    margin-bottom: 20px; /* Espacio entre las filas de tarjetas */
+}
+
+/* Tamaño de las tarjetas en pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .row {
+        justify-content: center;
+    }
+
+    .row .tarjeta-comprar .card {
+        width: 100%; /* Ancho completo para que se ajuste al contenedor */
+        height: auto; /* Altura automática para que se ajuste al contenido */
+        max-width: 180px; /* Ancho máximo para que quepan 2 tarjetas */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row .tarjeta-comprar .card-img-top {
+        height: auto; /* Altura fija para las imágenes en móviles */
+    }
+
+    .row .tarjeta-comprar .card-body {
+        padding: 10px; /* Menos padding para móviles */
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1; /* Hace que el cuerpo ocupe el espacio disponible */
+    }
+
+    .row .tarjeta-comprar .card-title {
+        font-size: 1rem; /* Tamaño de fuente más pequeño */
+        margin-bottom: 5px; /* Menos espacio debajo del título */
+    }
+
+    .row .tarjeta-comprar .card-text {
+        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+        flex-grow: 1; /* Hace que el texto ocupe el espacio disponible */
+    }
+
+    .row .tarjeta-comprar .card-price {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row .tarjeta-comprar .btn-comprar {
+        padding: 6px 12px; /* Botón más pequeño */
+        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .row .tarjeta-comprar .card-body .card-actions {
+        display: flex;
+        justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
+        align-items: center; /* Centra verticalmente los elementos */
+        margin-top: auto; /* Coloca .card-actions en la parte inferior */
+    }
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+    .row {
+        justify-content: center;
+    }
+
+    .row .tarjeta-comprar {
+        flex: 0 0 calc(25% - 15px); /* 4 tarjetas por fila en pantallas grandes */
+    }
+
+    .row .tarjeta-comprar .card {
+        width: 250px; /* Ancho fijo para las tarjetas */
+        height: 420px; /* Altura fija para las tarjetas */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row .tarjeta-comprar .card-body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1; /* Hace que el cuerpo ocupe el espacio disponible */
+    }
+
+    .row .tarjeta-comprar .card-text {
+        flex-grow: 1; /* Hace que el texto ocupe el espacio disponible */
+    }
+
+    .row .tarjeta-comprar .card-body .card-actions {
+        display: flex;
+        justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
+        align-items: center; /* Centra verticalmente los elementos */
+        margin-top: auto; /* Coloca .card-actions en la parte inferior */
+    }
+
+    .row .tarjeta-comprar .card-price {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    margin: 0 8px;
+}
+
+.social-icons a svg {
+    transition: fill 0.3s ease, filter 0.3s ease;
+    display: block;
+}
+
+/* Facebook - Azul (#1877F2) */
+.social-icons a:nth-child(1):hover svg {
+    fill: #1877f2;
+}
+
+/* X (Twitter) - Negro (#000000) */
+.social-icons a:nth-child(2):hover svg {
+    fill: #000000;
+}
+
+/* Instagram - Degradado al hacer hover */
+.social-icons a:nth-child(3) svg .icon-gradient {
+    opacity: 0; /* Inicialmente transparente */
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:nth-child(3):hover svg .icon-gradient {
+    opacity: 1; /* Mostrar el degradado al hacer hover */
+}
+
+/* Tik Tok - Rojo (#FF0050) */
+.social-icons a:nth-child(4):hover svg {
+    fill: #ff0050;
+}

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Tecnología</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/style/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-dark text-white py-3">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="#" class="text-white text-decoration-none h4">TechStore</a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProductos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProductos">
+                                <li><a class="dropdown-item" href="#">Teclados</a></li>
+                                <li><a class="dropdown-item" href="#">Mouse</a></li>
+                                <li><a class="dropdown-item" href="#">Sillas</a></li>
+                                <li><a class="dropdown-item" href="#">Monitores</a></li>
+                                <li><a class="dropdown-item" href="#">Teléfonos</a></li>
+                                <li><a class="dropdown-item" href="#">Componentes de PC</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop</a></li>
+                                <li><a class="dropdown-item" href="#">Set Up</a></li>
+                                <li><a class="dropdown-item" href="#">Escritorios</a></li>
+                                <li><a class="dropdown-item" href="#">Lámparas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMarcas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Marcas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMarcas">
+                                <li><a class="dropdown-item" href="#">Razer</a></li>
+                                <li><a class="dropdown-item" href="#">Logitech</a></li>
+                                <li><a class="dropdown-item" href="#">Corsair</a></li>
+                                <li><a class="dropdown-item" href="#">Asus ROG</a></li>
+                                <li><a class="dropdown-item" href="#">HyperX</a></li>
+                                <li><a class="dropdown-item" href="#">Samsung</a></li>
+                                <li><a class="dropdown-item" href="#">Apple</a></li>
+                                <li><a class="dropdown-item" href="#">Sony</a></li>
+                                <li><a class="dropdown-item" href="#">LG</a></li>
+                                <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownServicios">
+                                <li><a class="dropdown-item" href="#">Arma tu PC</a></li>
+                                <li><a class="dropdown-item" href="#">Reparaciones Tecnológicas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Carrusel de Ofertas (Carrusel 1) -->
+<div id="carouselOfertas" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/img/img-carusel/1.png" class="d-block w-100" alt="Oferta 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>TechStore</h5>
+                <p>Contando con los productos que necesitas</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="/img/img-carusel/2.png" class="d-block w-100" alt="Oferta 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Oferta Especial</h5>
+                <p>Smartphones con hasta 10% de descuento.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="/img/img-carusel/3.png" class="d-block w-100" alt="Oferta 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>¡¡¡NUEVO!!!</h5>
+                <p>Razer BlackWidow V4 X</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOfertas" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselOfertas" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Nuevo Ingreso (Carrusel 2) -->
+<section class="productos-section my-5">
+    <div class="container">
+        <h2 class="text-center mb-4">¡NUEVO INGRESO!</h2>
+        <hr class="my-4" style="border-top: 4px solid black; width: 50%; margin: 0 auto;">
+        <div class="productos-carousel">
+            <!-- Botón para retroceder -->
+            <button class="carousel-control-prev" type="button" id="prevButton">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <!-- Contenedor de las tarjetas -->
+            <div class="tarjetas-container" id="tarjetasContainer">
+                <!-- Tarjeta #1 -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="/img/img-carusel-tarjetas/1.png" class="card-img-top" alt="Producto 1">
+                        <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                            <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                        </button>
+                    </div>
+                    <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado Mecanico BLACKWIDOW V4 PRO RGB</h5>
+                        <p class="card-text">Razer</p>
+                        <p class="card-price">Q1,899</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn-comprar">Comprar</a>
+                            <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                                <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Tarjeta #2 -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="/img/img-carusel-tarjetas/2.png" class="card-img-top" alt="Producto 1">
+                        <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                            <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                        </button>
+                    </div>
+                    <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Monitor Curvo G2422C 24P 1MS 1920 X 1080</h5>
+                        <p class="card-text">MSI</p>
+                        <p class="card-price">Q1,169</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn-comprar">Comprar</a>
+                            <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                                <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Tarjeta #3 -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="/img/img-carusel-tarjetas/3.png" class="card-img-top" alt="Producto 1">
+                        <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                            <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                        </button>
+                    </div>
+                    <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Reloj Inteligente Watch Pro 2 ASH GREY</h5>
+                        <p class="card-text">Nothing</p>
+                        <p class="card-price">Q610</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn-comprar">Comprar</a>
+                            <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                                <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Tarjeta #4 -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="/img/img-carusel-tarjetas/4.png" class="card-img-top" alt="Producto 1">
+                        <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                            <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                        </button>
+                    </div>
+                    <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Silla Gaming Hero Series</h5>
+                        <p class="card-text">Noblechairs</p>
+                        <p class="card-price">Q4,799</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn-comprar">Comprar</a>
+                            <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                                <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Tarjeta #5 -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="/img/img-carusel-tarjetas/5.png" class="card-img-top" alt="Producto 1">
+                        <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                            <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                        </button>
+                    </div>
+                    <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">SETUP GRAN JAGUAR</h5>
+                        <p class="card-text">Set Up</p>
+                        <p class="card-price">Q6,999</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn-comprar">Comprar</a>
+                            <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                                <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Tarjeta #6 -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="/img/img-carusel-tarjetas/6.png" class="card-img-top" alt="Producto 1">
+                        <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                            <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                        </button>
+                    </div>
+                    <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">RTX 5070 TI 16GB GDDR7 OC EDITION</h5>
+                        <p class="card-text">MSI</p>
+                        <p class="card-price">Q10,899</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn-comprar">Comprar</a>
+                            <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                                <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Tarjeta #7 -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="/img/img-carusel-tarjetas/7.png" class="card-img-top" alt="Producto 1">
+                        <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                            <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                        </button>
+                    </div>
+                    <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mose USB Deathadder Essential White</h5>
+                        <p class="card-text">Razer</p>
+                        <p class="card-price">Q259</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn-comprar">Comprar</a>
+                            <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                                <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Tarjeta #8 -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="/img/img-carusel-tarjetas/8.png" class="card-img-top" alt="Producto 1">
+                        <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                            <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                        </button>
+                    </div>
+                    <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">             
+                    <div class="card-body">
+                        <h5 class="card-title">Audifonos Gaming Bluethooth ROG CETRA TRUE</h5>
+                        <p class="card-text">Asus</p>
+                        <p class="card-price">Q899</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn-comprar">Comprar</a>
+                            <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                                <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <button class="carousel-control-next" type="button" id="nextButton">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Main Content -->
+<main class="container my-5">
+    <h1 class="text-center">Bienvenido a TechStore</h1>
+    <p class="text-center">Explora nuestra amplia gama de productos tecnológicos.</p>
+    <hr class="my-4" style="border-top: 4px solid black; width: 50%; margin: 0 auto;">
+    <br>
+    <!-- Productos en Cartas -->
+    <div class="row">
+        <!-- Tarjeta 1 -->
+        <div class="col-md-6 col-lg-4 mb-4 tarjeta-comprar">
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="/img/img-productos-cartas-main/1.png" class="card-img-top" alt="Producto 1">
+                    <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                        <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                    </button>
+                </div>
+                <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">                <div class="card-body">
+                    <h5 class="card-title">Xiaomi Smart Band 8</h5>
+                    <p class="card-text">Xiaomi</p>
+                    <p class="card-price">Q310</p>
+                    <div class="card-actions">
+                        <a href="#" class="btn-comprar">Comprar</a>
+                        <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                            <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tarjeta 2 -->
+        <div class="col-md-6 col-lg-4 mb-4 tarjeta-comprar">
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="/img/img-productos-cartas-main/2.png" class="card-img-top" alt="Producto 1">
+                    <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                        <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                    </button>
+                </div>
+                <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">                <div class="card-body">
+                    <h5 class="card-title">Redmi Note 14 Pro</h5>
+                    <p class="card-text">Xiaomi</p>
+                    <p class="card-price">Q2,399</p>
+                    <div class="card-actions">
+                        <a href="#" class="btn-comprar">Comprar</a>
+                        <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                            <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tarjeta 3 -->
+        <div class="col-md-6 col-lg-4 mb-4 tarjeta-comprar">
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="/img/img-productos-cartas-main/3.png" class="card-img-top" alt="Producto 1">
+                    <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                        <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                    </button>
+                </div>
+                <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">                <div class="card-body">
+                    <h5 class="card-title">Galaxy Z Fold6 256GB</h5>
+                    <p class="card-text">Samsung</p>
+                    <p class="card-price">Q14,500</p>
+                    <div class="card-actions">
+                        <a href="#" class="btn-comprar">Comprar</a>
+                        <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                            <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tarjeta 4 -->
+        <div class="col-md-6 col-lg-4 mb-4 tarjeta-comprar">
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="/img/img-productos-cartas-main/4.png" class="card-img-top" alt="Producto 1">
+                    <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                        <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                    </button>
+                </div>
+                <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">                <div class="card-body">
+                    <h5 class="card-title">Escritorio Gamer Rojo</h5>
+                    <p class="card-text">LOOK</p>
+                    <p class="card-price">Q950</p>
+                    <div class="card-actions">
+                        <a href="#" class="btn-comprar">Comprar</a>
+                        <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                            <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tarjeta 5 -->
+        <div class="col-md-6 col-lg-4 mb-4 tarjeta-comprar">
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="/img/img-productos-cartas-main/5.png" class="card-img-top" alt="Producto 1">
+                    <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                        <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                    </button>
+                </div>
+                <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">                <div class="card-body">
+                    <h5 class="card-title">CASE Gaming Y70</h5>
+                    <p class="card-text">HYTE</p>
+                    <p class="card-price">Q2,900</p>
+                    <div class="card-actions">
+                        <a href="#" class="btn-comprar">Comprar</a>
+                        <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                            <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tarjeta 6 -->
+        <div class="col-md-6 col-lg-4 mb-4 tarjeta-comprar">
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="/img/img-productos-cartas-main/6.png" class="card-img-top" alt="Producto 1">
+                    <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                        <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                    </button>
+                </div>
+                <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">                <div class="card-body">
+                    <h5 class="card-title">Procesador Ryzen 5 8500G</h5>
+                    <p class="card-text">Ryzen</p>
+                    <p class="card-price">Q1,500</p>
+                    <div class="card-actions">
+                        <a href="#" class="btn-comprar">Comprar</a>
+                        <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                            <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 7 -->
+        <div class="col-md-6 col-lg-4 mb-4 tarjeta-comprar">
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="/img/img-productos-cartas-main/7.png" class="card-img-top" alt="Producto 1">
+                    <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                        <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                    </button>
+                </div>
+                <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">                <div class="card-body">
+                    <h5 class="card-title">Motherboard ROG STRIX B850-A</h5>
+                    <p class="card-text">Asus</p>
+                    <p class="card-price">Q2,950</p>
+                    <div class="card-actions">
+                        <a href="#" class="btn-comprar">Comprar</a>
+                        <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                            <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tarjeta 8 -->
+        <div class="col-md-6 col-lg-4 mb-4 tarjeta-comprar">
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="/img/img-productos-cartas-main/8.png" class="card-img-top" alt="Producto 1">
+                    <button class="icono-btn favorito-btn" onclick="toggleFavorito(this)">
+                        <i class="fas fa-heart"></i> <!-- Usamos Font Awesome para el ícono del corazón -->
+                    </button>
+                </div>
+                <hr class="card-divider" style="border-top: 4px solid black; width: 70%; margin: 10px auto;">                
+                <div class="card-body">
+                    <h5 class="card-title">Alienware M16 R2 AWM16</h5>
+                    <p class="card-text">Alienware</p>
+                    <p class="card-price">Q14,599</p>
+                    <div class="card-actions">
+                        <a href="#" class="btn-comprar">Comprar</a>
+                        <button class="icono-btn carrito-btn" onclick="toggleCarrito(this)">
+                            <i class="fas fa-shopping-cart"></i> <!-- Usamos Font Awesome para el ícono del carrito -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer id="footer" class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h5>Contacto</h5>
+                <p class="p-contacto">Email: info@techstore.com</p>
+                <p class="p-contacto">Teléfono: +123 456 789</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h5 class="siguenos-h5">Síguenos</h5>
+                <div class="social-icons">
+                    <!-- Facebook -->
+                    <a href="#" class="text-white me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" fill="currentColor">
+                            <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/>
+                        </svg>
+                    </a>
+                    <!-- X (Twitter) -->
+                    <a href="#" class="text-white me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" fill="currentColor">
+                            <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+                        </svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="#" class="text-white me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" fill="currentColor">
+                            <defs>
+                                <linearGradient id="instagram-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#833AB4; stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#E1306C; stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FCAF45; stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path class="icon-base" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                            <path class="icon-gradient" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="url(#instagram-gradient)" opacity="0"/>
+                        </svg>
+                    </a>
+                    <!-- Tik Tok -->
+                    <a href="#" class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" fill="currentColor">
+                            <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <h5 class="enlaces-footer">Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Política de Privacidad</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Términos y Condiciones</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Soporte</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="/style/scripts.js"></script>
+</body>
+</html>
