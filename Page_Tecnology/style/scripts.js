@@ -1,3 +1,12 @@
+// --------------------------------------------------------
+// Author: Ricardo Márquez
+// GitHub: https://github.com/Ricardo21Josee
+// LinkedIn: https://www.linkedin.com/in/ric21marquez
+// Instagram: @mar_quez_g
+// Threads: @mar_quez_g
+// Email: josemarquez21garcia@gmail.com
+// --------------------------------------------------------
+
 document.addEventListener('DOMContentLoaded', function () {
     // Función para manejar los menús desplegables
     const dropdowns = document.querySelectorAll('.dropdown');
