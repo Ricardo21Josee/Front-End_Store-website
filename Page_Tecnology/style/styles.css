@@ -1,60 +1,76 @@
-/* --------------------------------------------------------
-Author: Ricardo Márquez
-GitHub: https://github.com/Ricardo21Josee
-LinkedIn: https://www.linkedin.com/in/ric21marquez
-Instagram: @mar_quez_g
-Threads: @mar_quez_g
-Email: josemarquez21garcia@gmail.com
--------------------------------------------------------- */
+/*
+    ============================
+    Technology Store Page - TechStore
+    Author: Ricardo Márquez
+    GitHub: https://github.com/Ricardo21Josee
+    LinkedIn: https://www.linkedin.com/in/ric21marquez
+    Instagram: @mar_quez_g
+    Threads: @mar_quez_g
+    Email: josemarquez21garcia@gmail.com
+    ============================
+*/
 
 
+/* ============================
+   Estilos generales / General styles
+   ============================ */
 
-/* Estilos personalizados */
+/* Estilos personalizados para el body / Custom body styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #F1F3F5;
 }
 
+/* Estilos para el encabezado / Header styles */
 header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #343a40; /* Color de fondo del header */
+    background-color: #343a40; /* Color de fondo del header / Header background color */
 }
 
-/* Estilos generales para los menús desplegables */
+/* ============================
+   Menús desplegables / Dropdown menus
+   ============================ */
+
+/* Estilos generales para los menús desplegables / General dropdown menu styles */
 .navbar-nav .dropdown-menu {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease; /* Transición más suave */
-    transform: translateY(-20px); /* Mayor desplazamiento inicial para una animación más fluida */
-    right: 0; /* Alinea el menú desplegable a la derecha */
-    left: auto; /* Anula la alineación a la izquierda */
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease; /* Transición suave / Smooth transition */
+    transform: translateY(-20px); /* Animación de desplazamiento / Slide animation */
+    right: 0; /* Alinea a la derecha / Align right */
+    left: auto; /* Anula alineación izquierda / Cancel left align */
 }
 
-/* Mostrar el menú desplegable cuando está activo */
+/* Mostrar el menú desplegable cuando está activo / Show dropdown when active */
 .navbar-nav .dropdown-menu.show {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0); /* Vuelve a la posición original */
+    transform: translateY(0); /* Vuelve a la posición original / Back to original position */
 }
 
-/* Estilos para los enlaces del menú desplegable */
+/* Estilos para los enlaces del menú desplegable / Dropdown menu link styles */
 .dropdown-menu a {
     transition: background-color 0.2s ease, color 0.2s ease;
-    color: #343a40; /* Color del texto del menú desplegable */
+    color: #343a40; /* Color del texto / Text color */
 }
 
-/* Efecto hover en los enlaces del menú desplegable */
+/* Efecto hover en los enlaces del menú desplegable / Hover effect on dropdown links */
 .dropdown-menu a:hover {
-    background-color: #495057; /* Color de fondo al hacer hover */
-    color: #ffffff; /* Color del texto al hacer hover */
+    background-color: #495057; /* Fondo al hacer hover / Background on hover */
+    color: #ffffff; /* Texto al hacer hover / Text on hover */
 }
 
-/*Carusel #1*/
+/* ============================
+   Carrusel principal / Main carousel
+   ============================ */
+
+/* Estilos para las imágenes del carrusel / Carousel image styles */
 .carousel-item img {
     max-height: 400px;
     object-fit: cover;
 }
 
+/* Estilos para los títulos del carrusel / Carousel title styles */
 .carousel-item h5 {
     opacity: 0.8;
     align-items: center;
@@ -62,126 +78,143 @@ header {
     color: #000000;
     background-color: #c7c7c7;
     border-radius: 5px;
-    text-align: center; /* Centra el texto horizontalmente */
-    margin: 0 auto; /* Centra el elemento horizontalmente */
+    text-align: center; /* Centra el texto / Center text */
+    margin: 0 auto; /* Centra el elemento / Center element */
 }
 
-/*Diseño de tarejtas de productos en GENERAL*/
+/* ============================
+   Tarjetas de productos / Product cards
+   ============================ */
+
+/* Diseño general de tarjetas / General card design */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #ddd; /* Borde sutil */
-    border-radius: 10px; /* Bordes redondeados */
-    overflow: hidden; /* Evita que el contenido se desborde */
+    border: 1px solid #ddd; /* Borde sutil / Subtle border */
+    border-radius: 10px; /* Bordes redondeados / Rounded corners */
+    overflow: hidden; /* Evita desbordes / Prevent overflow */
     display: flex;
-    flex-direction: column; /* Organiza el contenido en columna */
-    height: 380px; /* Altura fija para las tarjetas */
-    width: 250px; /* Ancho fijo para las tarjetas */
-    background-color: #fff; /* Fondo blanco */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    flex-direction: column; /* Contenido en columna / Column layout */
+    height: 380px; /* Altura fija / Fixed height */
+    width: 250px; /* Ancho fijo / Fixed width */
+    background-color: #fff; /* Fondo blanco / White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave / Soft shadow */
 }
 
+/* Efecto hover en tarjetas / Card hover effect */
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada / Stronger shadow */
 }
 
+/* Contenedor de imagen en la tarjeta / Card image container */
 .card-img-container {
-    position: relative; /* Para posicionar el ícono de favorito */
-    margin-top: 20px; /* Margen superior para la imagen */
+    position: relative; /* Para íconos / For icons */
+    margin-top: 20px; /* Margen superior / Top margin */
 }
 
+/* Imagen de la tarjeta / Card image */
 .card-img-top {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
-    height: auto; /* Altura automática para mantener la proporción */
-    display: block; /* Elimina el espacio debajo de la imagen */
+    width: 100%; /* Imagen ocupa todo el ancho / Full width */
+    height: auto; /* Mantiene proporción / Keep ratio */
+    display: block; /* Elimina espacio extra / Remove extra space */
 }
 
+/* Botón de favorito / Favorite button */
 .favorito-btn {
-    position: absolute; /* Posición absoluta para el ícono de favorito */
-    top: 10px; /* Distancia desde la parte superior */
-    right: 10px; /* Distancia desde la derecha */
+    position: absolute; /* Posición absoluta / Absolute position */
+    top: 10px; /* Desde arriba / From top */
+    right: 10px; /* Desde la derecha / From right */
     background: none;
     border: none;
     cursor: pointer;
     padding: 0;
 }
 
-/* Estilos para los íconos de Font Awesome */
+/* Estilos para los íconos de Font Awesome / Font Awesome icon styles */
 .fas {
     font-size: 24px;
-    color: #666; /* Color gris por defecto */
+    color: #666; /* Color gris por defecto / Default gray */
     transition: color 0.3s ease;
 }
 
-/* Estilos para el corazón activo */
+/* Corazón activo / Active heart */
 .favorito-btn.active .fa-heart {
-    color: red; /* Color rojo al activar */
+    color: red; /* Rojo al activar / Red when active */
 }
 
-/* Estilos para el carrito activo */
+/* Carrito activo / Active cart */
 .carrito-btn.active .fa-shopping-cart {
-    color: blue; /* Color azul al activar */
+    color: blue; /* Azul al activar / Blue when active */
 }
 
+/* Divisor en la tarjeta / Card divider */
 .card-divider {
-    width: 80%; /* Ancho del divisor */
-    margin: 5px auto; /* Centrar el divisor */
+    width: 80%; /* Ancho del divisor / Divider width */
+    margin: 5px auto; /* Centrado / Centered */
     border: 0;
-    border-top: 2px solid #ddd; /* Línea divisoria más visible */
+    border-top: 2px solid #ddd; /* Línea divisoria / Divider line */
 }
 
+/* Cuerpo de la tarjeta / Card body */
 .card-body {
-    padding: 15px; /* Espaciado interno */
-    text-align: center; /* Alinea el contenido a la izquierda */
+    padding: 15px; /* Espaciado interno / Padding */
+    text-align: center; /* Centra el contenido / Center content */
 }
 
+/* Título de la tarjeta / Card title */
 .card-title {
-    font-size: 1.1rem; /* Tamaño del título */
+    font-size: 1.1rem; /* Tamaño del título / Title size */
     margin-left: 0;
-    margin-bottom: 10px; /* Espacio debajo del título */
-    color: #333; /* Color del título */
+    margin-bottom: 10px; /* Espacio debajo / Space below */
+    color: #333; /* Color del título / Title color */
 }
 
+/* Texto de la tarjeta / Card text */
 .card-text {
-    font-size: 0.9rem; /* Tamaño del texto */
-    color: #666; /* Color gris oscuro */
-    margin-bottom: 10px; /* Espacio debajo del texto */
+    font-size: 0.9rem; /* Tamaño del texto / Text size */
+    color: #666; /* Gris oscuro / Dark gray */
+    margin-bottom: 10px; /* Espacio debajo / Space below */
 }
 
+/* Precio de la tarjeta / Card price */
 .card-price {
-    font-size: 1.1rem; /* Tamaño del precio */
-    font-weight: bold; /* Negrita para el precio */
-    color: #fff; /* Color blanco */
-    background-color: #ff0000; /* Fondo rojo */
-    padding: 5px 10px; /* Espaciado interno */
-    border-radius: 15px; /* Bordes redondeados */
-    display: inline-block; /* Para que no ocupe todo el ancho */
-    margin-bottom: 15px; /* Espacio debajo del precio */
+    font-size: 1.1rem; /* Tamaño del precio / Price size */
+    font-weight: bold; /* Negrita / Bold */
+    color: #fff; /* Blanco / White */
+    background-color: #ff0000; /* Fondo rojo / Red background */
+    padding: 5px 10px; /* Espaciado interno / Padding */
+    border-radius: 15px; /* Bordes redondeados / Rounded corners */
+    display: inline-block; /* No ocupa todo el ancho / Inline block */
+    margin-bottom: 15px; /* Espacio debajo / Space below */
 }
 
+/* Acciones de la tarjeta / Card actions */
 .card-actions {
     display: flex;
-    justify-content: space-between; /* Espacio entre el botón y el ícono */
-    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between; /* Espacio entre elementos / Space between */
+    align-items: center; /* Alinear verticalmente / Vertical align */
 }
 
+/* Botón comprar / Buy button */
 .btn-comprar {
-    background-color: #ff0000; /* Fondo rojo */
-    color: #fff; /* Letras blancas */
-    padding: 8px 16px; /* Espaciado interno */
+    background-color: #ff0000; /* Fondo rojo / Red background */
+    color: #fff; /* Letras blancas / White text */
+    padding: 8px 16px; /* Espaciado interno / Padding */
     border: none;
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 0.9rem; /* Tamaño del texto */
+    border-radius: 5px; /* Bordes redondeados / Rounded corners */
+    font-size: 0.9rem; /* Tamaño del texto / Text size */
     cursor: pointer;
     transition: background-color 0.3s ease;
-    text-decoration: none; /* Asegura que no haya subrayado */
+    text-decoration: none; /* Sin subrayado / No underline */
 }
 
+/* Hover en botón comprar / Buy button hover */
 .btn-comprar:hover {
-    background-color: #cc0000; /* Color rojo más oscuro al hacer hover */
-    text-decoration: none; /* Asegura que no haya subrayado */
+    background-color: #cc0000; /* Rojo más oscuro / Darker red */
+    text-decoration: none; /* Sin subrayado / No underline */
 }
 
+/* Botón carrito / Cart button */
 .carrito-btn {
     background: none;
     border: none;
@@ -189,25 +222,30 @@ header {
     padding: 0;
 }
 
+/* ============================
+   Mensaje flotante / Floating message
+   ============================ */
 
-
+/* Mensaje flotante / Floating message */
 .mensaje-flotante {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #4CAF50; /* Color de fondo del mensaje */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    z-index: 1000; /* Asegura que el mensaje esté por encima de otros elementos */
-    animation: slideIn 0.5s ease-out; /* Animación de entrada */
+    background-color: #4CAF50; /* Fondo verde / Green background */
+    color: white; /* Texto blanco / White text */
+    padding: 10px 20px; /* Espaciado interno / Padding */
+    border-radius: 5px; /* Bordes redondeados / Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave / Soft shadow */
+    z-index: 1000; /* Sobre otros elementos / Above others */
+    animation: slideIn 0.5s ease-out; /* Animación de entrada / Slide in animation */
 }
 
+/* Mensaje de eliminado / Deleted message */
 .mensaje-flotante.eliminado {
-    background-color: #f44336; /* Color rojo para mensajes de eliminación */
+    background-color: #f44336; /* Fondo rojo / Red background */
 }
 
+/* Animación de entrada / Slide in animation */
 @keyframes slideIn {
     from {
         transform: translateX(100%);
@@ -219,12 +257,17 @@ header {
     }
 }
 
-/* Estilos para la sección de productos de nuevo ingreso en carusel*/
+/* ============================
+   Carrusel de productos / Product carousel
+   ============================ */
+
+/* Sección de productos nuevos / New products section */
 .productos-section {
     padding: 20px 0;
     background-color: #F1F3F5;
 }
 
+/* Carrusel de productos / Product carousel */
 .productos-carousel {
     position: relative;
     display: flex;
@@ -233,61 +276,67 @@ header {
     overflow: hidden;
 }
 
+/* Contenedor de tarjetas / Cards container */
 .tarjetas-container {
     height: auto;
     display: flex;
-    gap: 15px; /* Espacio entre las tarjetas */
-    transition: transform 0.5s ease; /* Transición suave al mover las tarjetas */
+    gap: 15px; /* Espacio entre tarjetas / Space between cards */
+    transition: transform 0.5s ease; /* Transición suave / Smooth transition */
     width: 100%;
-    overflow-x: auto; /* Permite el desplazamiento horizontal */
-    scroll-snap-type: x mandatory; /* Fuerza el desplazamiento a alinearse con las tarjetas */
-    scroll-behavior: smooth; /* Desplazamiento suave */
-    padding: 20px 0; /* Más espacio interno para que las tarjetas se vean mejor */
+    overflow-x: auto; /* Desplazamiento horizontal / Horizontal scroll */
+    scroll-snap-type: x mandatory; /* Alineación obligatoria / Snap alignment */
+    scroll-behavior: smooth; /* Desplazamiento suave / Smooth scroll */
+    padding: 20px 0; /* Espacio interno / Padding */
 }
 
-/* Ocultar la barra de desplazamiento en modo escritorio */
+/* Ocultar barra de desplazamiento en escritorio / Hide scrollbar on desktop */
 @media (min-width: 992px) {
     .tarjetas-container {
-        overflow-x: hidden; /* Oculta la barra de desplazamiento */
+        overflow-x: hidden; /* Oculta barra / Hide scrollbar */
     }
 }
 
-/* Mostrar la barra de desplazamiento en modo responsive */
+/* Mostrar barra de desplazamiento en responsive / Show scrollbar on responsive */
 @media (max-width: 991.98px) {
     .tarjetas-container {
-        overflow-x: auto; /* Muestra la barra de desplazamiento */
+        overflow-x: auto; /* Muestra barra / Show scrollbar */
     }
 }
 
+/* Estilos de tarjetas dentro del carrusel / Carousel card styles */
 .tarjetas-container .card {
-    flex: 0 0 250px; /* Ancho fijo para las tarjetas */
-    height: auto; /* Altura fija para las tarjetas */
-    background-color: #fff; /* Fondo blanco */
-    border: 1px solid #ddd; /* Borde sutil */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    flex: 0 0 250px; /* Ancho fijo / Fixed width */
+    height: auto; /* Altura automática / Auto height */
+    background-color: #fff; /* Fondo blanco / White background */
+    border: 1px solid #ddd; /* Borde sutil / Subtle border */
+    border-radius: 10px; /* Bordes redondeados / Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave / Soft shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    scroll-snap-align: center; /* Centra la tarjeta en el contenedor */
+    scroll-snap-align: center; /* Centra la tarjeta / Center card */
 }
 
-/* Ajustar el número de tarjetas visibles en modo escritorio */
+/* Ajustar tarjetas en escritorio / Desktop cards */
 @media (min-width: 992px) {
     .tarjetas-container .card {
-        flex: 0 0 calc(25% - 15px); /* 4 tarjetas por fila en escritorio */
+        flex: 0 0 calc(25% - 15px); /* 4 tarjetas por fila / 4 cards per row */
         height: auto;
     }
 }
 
-/* Ajustar el número de tarjetas visibles en modo responsive */
+/* Ajustar tarjetas en responsive / Responsive cards */
 @media (max-width: 991.98px) {
     .tarjetas-container .card {
-        flex: 0 0 calc(100% - 15px); /* 1 tarjeta por fila en móviles y tablets */
-        flex: 0 0 220px; /* Ancho fijo para las tarjetas */
-        height: auto; /* Altura fija para las tarjetas */
+        flex: 0 0 calc(100% - 15px); /* 1 tarjeta por fila / 1 card per row */
+        flex: 0 0 220px; /* Ancho fijo / Fixed width */
+        height: auto;
     }
 }
 
-/* Estilos para los botones de control */
+/* ============================
+   Botones de control del carrusel / Carousel control buttons
+   ============================ */
+
+/* Botones de control / Control buttons */
 .carousel-control-prev,
 .carousel-control-next {
     background-color: rgba(0, 0, 0, 0.5);
@@ -305,6 +354,7 @@ header {
     z-index: 1;
 }
 
+/* Posición de los botones / Button position */
 .carousel-control-prev {
     left: 10px;
 }
@@ -313,85 +363,90 @@ header {
     right: 10px;
 }
 
+/* Iconos de los botones / Button icons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: brightness(0) invert(1); /* Cambia el color de los íconos a blanco */
+    filter: brightness(0) invert(1); /* Iconos blancos / White icons */
 }
 
-/* Estilos para las tarjetas en el main */
+/* ============================
+   Tarjetas en el main / Main cards
+   ============================ */
+
+/* Tarjetas en el main / Main section cards */
 .row .tarjeta-comprar {
-    flex: 0 0 calc(50% - 15px); /* 2 tarjetas por fila en móviles */
-    margin-bottom: 20px; /* Espacio entre las filas de tarjetas */
+    flex: 0 0 calc(50% - 15px); /* 2 tarjetas por fila en móviles / 2 cards per row on mobile */
+    margin-bottom: 20px; /* Espacio entre filas / Space between rows */
 }
 
-/* Tamaño de las tarjetas en pantallas pequeñas */
+/* Tarjetas en pantallas pequeñas / Small screens */
 @media (max-width: 767.98px) {
     .row {
         justify-content: center;
     }
 
     .row .tarjeta-comprar .card {
-        width: 100%; /* Ancho completo para que se ajuste al contenedor */
-        height: auto; /* Altura automática para que se ajuste al contenido */
-        max-width: 180px; /* Ancho máximo para que quepan 2 tarjetas */
+        width: 100%; /* Ancho completo / Full width */
+        height: auto; /* Altura automática / Auto height */
+        max-width: 180px; /* Máximo 2 tarjetas / Max 2 cards */
         display: flex;
         flex-direction: column;
     }
 
     .row .tarjeta-comprar .card-img-top {
-        height: auto; /* Altura fija para las imágenes en móviles */
+        height: auto; /* Altura automática / Auto height */
     }
 
     .row .tarjeta-comprar .card-body {
-        padding: 10px; /* Menos padding para móviles */
+        padding: 10px; /* Menos padding / Less padding */
         display: flex;
         flex-direction: column;
-        flex-grow: 1; /* Hace que el cuerpo ocupe el espacio disponible */
+        flex-grow: 1; /* Ocupa espacio disponible / Take available space */
     }
 
     .row .tarjeta-comprar .card-title {
-        font-size: 1rem; /* Tamaño de fuente más pequeño */
-        margin-bottom: 5px; /* Menos espacio debajo del título */
+        font-size: 1rem; /* Fuente más pequeña / Smaller font */
+        margin-bottom: 5px;
     }
 
     .row .tarjeta-comprar .card-text {
-        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
-        flex-grow: 1; /* Hace que el texto ocupe el espacio disponible */
+        font-size: 0.8rem; /* Fuente más pequeña / Smaller font */
+        flex-grow: 1;
     }
 
     .row .tarjeta-comprar .card-price {
-        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+        font-size: 0.9rem; /* Fuente más pequeña / Smaller font */
         width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .row .tarjeta-comprar .btn-comprar {
-        padding: 6px 12px; /* Botón más pequeño */
-        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+        padding: 6px 12px; /* Botón más pequeño / Smaller button */
+        font-size: 0.8rem;
     }
 
     .row .tarjeta-comprar .card-body .card-actions {
         display: flex;
-        justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
-        align-items: center; /* Centra verticalmente los elementos */
-        margin-top: auto; /* Coloca .card-actions en la parte inferior */
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
     }
 }
 
-/* Estilos para pantallas más grandes */
+/* Tarjetas en pantallas grandes / Large screens */
 @media (min-width: 768px) {
     .row {
         justify-content: center;
     }
 
     .row .tarjeta-comprar {
-        flex: 0 0 calc(25% - 15px); /* 4 tarjetas por fila en pantallas grandes */
+        flex: 0 0 calc(25% - 15px); /* 4 tarjetas por fila / 4 cards per row */
     }
 
     .row .tarjeta-comprar .card {
-        width: 250px; /* Ancho fijo para las tarjetas */
-        height: 420px; /* Altura fija para las tarjetas */
+        width: 250px; /* Ancho fijo / Fixed width */
+        height: 420px; /* Altura fija / Fixed height */
         display: flex;
         flex-direction: column;
     }
@@ -399,18 +454,18 @@ header {
     .row .tarjeta-comprar .card-body {
         display: flex;
         flex-direction: column;
-        flex-grow: 1; /* Hace que el cuerpo ocupe el espacio disponible */
+        flex-grow: 1;
     }
 
     .row .tarjeta-comprar .card-text {
-        flex-grow: 1; /* Hace que el texto ocupe el espacio disponible */
+        flex-grow: 1;
     }
 
     .row .tarjeta-comprar .card-body .card-actions {
         display: flex;
-        justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
-        align-items: center; /* Centra verticalmente los elementos */
-        margin-top: auto; /* Coloca .card-actions en la parte inferior */
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
     }
 
     .row .tarjeta-comprar .card-price {
@@ -420,11 +475,15 @@ header {
     }
 }
 
-/* FOOTER */
+/* ============================
+   Pie de página / Footer
+   ============================ */
+
 footer {
     margin-top: auto;
 }
 
+/* Íconos sociales / Social icons */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -444,27 +503,27 @@ footer {
     display: block;
 }
 
-/* Facebook - Azul (#1877F2) */
+/* Facebook - Azul (#1877F2) / Blue on hover */
 .social-icons a:nth-child(1):hover svg {
     fill: #1877f2;
 }
 
-/* X (Twitter) - Negro (#000000) */
+/* X (Twitter) - Negro (#000000) / Black on hover */
 .social-icons a:nth-child(2):hover svg {
     fill: #000000;
 }
 
-/* Instagram - Degradado al hacer hover */
+/* Instagram - Degradado al hacer hover / Gradient on hover */
 .social-icons a:nth-child(3) svg .icon-gradient {
-    opacity: 0; /* Inicialmente transparente */
+    opacity: 0; /* Inicialmente transparente / Initially transparent */
     transition: opacity 0.3s ease;
 }
 
 .social-icons a:nth-child(3):hover svg .icon-gradient {
-    opacity: 1; /* Mostrar el degradado al hacer hover */
+    opacity: 1; /* Mostrar el degradado / Show gradient */
 }
 
-/* Tik Tok - Rojo (#FF0050) */
+/* Tik Tok - Rojo (#FF0050) / Red on hover */
 .social-icons a:nth-child(4):hover svg {
     fill: #ff0050;
 }
